@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Johnson - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experiences" class="nav-link">Experiences</a>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#home" class="nav-link-mobile">Home</a>
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#skills" class="nav-link-mobile">Skills</a>
+                <a href="#experiences" class="nav-link-mobile">Experiences</a>
+                <a href="#portfolio" class="nav-link-mobile">Portfolio</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Left Content -->
+                <div class="hero-left">
+                    <div class="hello-badge">Hello I'm</div>
+                    
+                    <div class="hero-text">
+                        <h1 class="hero-name">Alex Johnson</h1>
+                        <p class="hero-title">Computer Science Student</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alex.johnson@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+94 77 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Colombo, Sri Lanka</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Profile Image -->
+                <div class="hero-right">
+                    <div class="profile-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Alex Johnson">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left - Illustration -->
+                <div class="about-left">
+                    <div class="illustration-container">
+                        <!-- Decorative circles -->
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                        <div class="circle circle-4"></div>
+                        <div class="circle circle-5"></div>
+                        <div class="circle circle-6"></div>
+
+                        <!-- Main illustration -->
+                        <div class="main-illustration">
+                            <div class="illustration-person">
+                                <div class="person-head"></div>
+                                <div class="person-laptop"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Content -->
+                <div class="about-right">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="about-text">
+                        Hello, I'm Alex Johnson, a passionate Computer Science student at the University of Sri Jayewardenepura.
+                        I have extensive experience in web development, software engineering, and modern technologies. I'm
+                        skilled in creating responsive web applications and solving complex programming challenges.
+                    </p>
+
+                    <div class="skills-section">
+                        <p class="skills-label">I'm proficient in:</p>
+                        <div class="skills-tags">
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">AWS</span>
+                        </div>
+                    </div>
+
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">
+                    Here are the technologies and tools I work with to create amazing digital experiences.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 class="skill-card-title">Frontend Development</h3>
+                    <div class="skill-card-tags">
+                        <span class="skill-badge">React</span>
+                        <span class="skill-badge">Vue.js</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 class="skill-card-title">Backend Development</h3>
+                    <div class="skill-card-tags">
+                        <span class="skill-badge">Node.js</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Express.js</span>
+                        <span class="skill-badge">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3 class="skill-card-title">Tools & Others</h3>
+                    <div class="skill-card-tags">
+                        <span class="skill-badge">Git</span>
+                        <span class="skill-badge">AWS</span>
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Education</h2>
+                <p class="section-subtitle">My journey in technology and academic achievements.</p>
+            </div>
+
+            <div class="experiences-grid">
+                <!-- Experience -->
+                <div class="experience-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-briefcase"></i>
+                        Work Experience
+                    </h3>
+                    <div class="experience-cards">
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h4 class="card-title">Frontend Developer Intern</h4>
+                                    <p class="card-company">Tech Solutions Ltd</p>
+                                </div>
+                                <span class="card-period">2023 - Present</span>
+                            </div>
+                            <p class="card-description">
+                                Developed responsive web applications using React and modern JavaScript frameworks.
+                            </p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h4 class="card-title">Web Development Freelancer</h4>
+                                    <p class="card-company">Self-Employed</p>
+                                </div>
+                                <span class="card-period">2022 - 2023</span>
+                            </div>
+                            <p class="card-description">
+                                Created custom websites for small businesses and startups using various technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="experience-column">
+                    <h3 class="column-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education
+                    </h3>
+                    <div class="experience-cards">
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h4 class="card-title">Bachelor of Computing Honours</h4>
+                                    <p class="card-company">University of Sri Jayewardenepura</p>
+                                </div>
+                                <span class="card-period">2022-2026</span>
+                            </div>
+                            <p class="card-description">
+                                Computer Science major with focus on software engineering and web development. Current GPA: 3.8/4.0
+                            </p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h4 class="card-title">Advanced Level</h4>
+                                    <p class="card-company">Royal College Colombo</p>
+                                </div>
+                                <span class="card-period">2020</span>
+                            </div>
+                            <p class="card-description">
+                                Mathematics, Physics, Chemistry - 3A passes with distinction in Mathematics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="achievements-section">
+                <h3 class="column-title">
+                    <i class="fas fa-trophy"></i>
+                    Achievements
+                </h3>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <i class="fas fa-award achievement-icon"></i>
+                        <h4 class="achievement-title">University Hackathon Winner</h4>
+                        <p class="achievement-year">2024</p>
+                        <p class="achievement-description">1st place in 48-hour coding competition</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <i class="fas fa-award achievement-icon"></i>
+                        <h4 class="achievement-title">Dean's List Recognition</h4>
+                        <p class="achievement-year">2023</p>
+                        <p class="achievement-description">Outstanding academic performance</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <i class="fas fa-award achievement-icon"></i>
+                        <h4 class="achievement-title">AWS Cloud Practitioner</h4>
+                        <p class="achievement-year">2023</p>
+                        <p class="achievement-description">Certified in cloud computing fundamentals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Portfolio</h2>
+                <p class="section-subtitle">
+                    Here are some of the projects I've worked on that showcase my skills and creativity.
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="E-Commerce Platform">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">E-Commerce Platform</h3>
+                        <p class="portfolio-description">Full-stack e-commerce solution with payment integration</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">Node.js</span>
+                            <span class="portfolio-tag">MongoDB</span>
+                            <span class="portfolio-tag">Stripe</span>
+                        </div>
+                        <button class="portfolio-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop" alt="Task Management App">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Task Management App</h3>
+                        <p class="portfolio-description">Collaborative task management with real-time updates</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">Vue.js</span>
+                            <span class="portfolio-tag">Express.js</span>
+                            <span class="portfolio-tag">Socket.io</span>
+                        </div>
+                        <button class="portfolio-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop" alt="Weather Dashboard">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Weather Dashboard</h3>
+                        <p class="portfolio-description">Real-time weather application with location services</p>
+                        <div class="portfolio-tags">
+                            <span class="portfolio-tag">React</span>
+                            <span class="portfolio-tag">OpenWeather API</span>
+                            <span class="portfolio-tag">Chart.js</span>
+                        </div>
+                        <button class="portfolio-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    I'm always open to discussing new opportunities and interesting projects. Let's connect!
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3 class="contact-card-title">Contact Information</h3>
+                    <p class="contact-card-subtitle">Feel free to reach out through any of these channels</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alex.johnson@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+94 77 123 4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Colombo, Sri Lanka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <h3 class="contact-card-title">Social Media</h3>
+                    <p class="contact-card-subtitle">Connect with me on social platforms</p>
+                    <div class="contact-items">
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/in/alexjohnson</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>github.com/alexjohnson</span>
+                        </a>
+                        <a href="#" class="contact-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>twitter.com/alexjohnson</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
