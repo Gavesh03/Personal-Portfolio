@@ -448,18 +448,18 @@ body {
   background-color: #f9fafb;
 }
 
-.experiences-grid {
+/*.experiences-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-bottom: 3rem;
-}
+}*/
 
-.experience-column {
-  display: flex;
-  flex-direction: column;
+/*.experience-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
-}
+}*/
 
 .column-title {
   font-size: 1.5rem;
@@ -475,8 +475,10 @@ body {
 }
 
 .experience-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*flex-direction: column;*/
+  margin-bottom: 5px;
   gap: 1.5rem;
 }
 
@@ -519,7 +521,12 @@ body {
 }
 
 .achievements-section {
-  margin-top: 3rem;
+  /*margin-top: 3rem;*/
+
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  justify-items: center;
   
 }
 .ach{
@@ -532,7 +539,6 @@ body {
 
 .achievements-grid {
   width: 800px;
-  background-color: #059669;
 
 }
 
@@ -887,5 +893,63 @@ body {
   .experience-card:hover,
   .achievement-card:hover {
     transform: translateY(-2px);
+  }
+}
+@media print {
+  /* Hide navigation and interactive elements */
+  .header,
+  .mobile-menu-btn,
+  .nav-mobile,
+  .nav-desktop,
+  .portfolio-btn,
+  .footer,
+  button,
+  iframe,
+  video,
+  .portfolio-tags {
+    display: none !important;
+  }
+
+  /* Remove background color and shadows if any */
+  body,
+  .container,
+  .experience-card,
+  .portfolio-card {
+    background: white !important;
+    box-shadow: none !important;
+  }
+
+  /* Ensure text color is black for readability */
+  body, h1, h2, h3, h4, h5, h6, p, span {
+    color: black !important;
+  }
+
+  /* Ensure sections are full width for printing */
+  .container, .contact-grid, .portfolio-grid, .skills-grid, .experiences-grid {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  /* Profile image styling for print */
+  .hero-right img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  /* Adjust spacing */
+  section {
+    page-break-inside: avoid;
+    margin-bottom: 40px;
+  }
+
+  /* Hide social icons in contact section */
+  .footer-social,
+  .contact-link i {
+    display: none !important;
+  }
+
+  /* Optional: Reduce font sizes slightly for fitting content */
+  body {
+    font-size: 14px;
   }
 }

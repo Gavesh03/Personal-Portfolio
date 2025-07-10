@@ -33,8 +33,8 @@
                     <a href="#home" class="nav-link active">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#skills" class="nav-link">Skills</a>
-                    <a href="#experiences" class="nav-link">Experiences</a>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                    <a href="#achievements" class="nav-link">Achievements</a>
+                    <a href="#portfolio" class="nav-link">Projects</a>
                     <a href="#contact" class="nav-link">Contact</a>
                 </nav>
 
@@ -50,8 +50,8 @@
                 <a href="#home" class="nav-link-mobile">Home</a>
                 <a href="#about" class="nav-link-mobile">About</a>
                 <a href="#skills" class="nav-link-mobile">Skills</a>
-                <a href="#experiences" class="nav-link-mobile">Experiences</a>
-                <a href="#portfolio" class="nav-link-mobile">Portfolio</a>
+                <a href="#achievements" class="nav-link-mobile">Achievements</a>
+                <a href="#portfolio" class="nav-link-mobile">Projects</a>
                 <a href="#contact" class="nav-link-mobile">Contact</a>
                 </center>
             </nav>
@@ -157,7 +157,7 @@
                         </div>
                     </div>
 
-                    <button class="download-btn">
+                    <button onclick="window.print()" class="download-btn">
                         <i class="fas fa-download"></i>
                         Download CV
                     </button>
@@ -275,11 +275,23 @@
                                 Mathematics, Physics, Chemistry - A,B,B passes with distinction in Mathematics.
                             </p>
                         </div>
+                        <div class="experience-card">
+                            <div class="card-header">
+                                <div class="card-info">
+                                    <h4 class="card-title">GCE Ordinary Level</h4>
+                                    <p class="card-company">Deniyaya Central College</p>
+                                </div>
+                                <span class="card-period">2019</span>
+                            </div>
+                            <p class="card-description">
+                                Passed with 9As for all the Subjects
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- Extra-Curricular Activities -->
-            <div class="achievements-section">
+            <div class="achievements-section" id="achievements">
                 <h3 class="column-title">
                     <i class="fas fa-trophy"></i>
                     Extra-Curricular Activities
@@ -296,7 +308,7 @@
             </div>
 
             <!-- Achievements -->
-            <div class="achievements-section">
+            <div class="achievements-section" id="achievements">
                 <h3 class="column-title">
                     Achievements
                 </h3>
@@ -312,14 +324,14 @@
             </div>
         </div>
         <br>
-        <div class="ach">
+        <!--<div class="ach">
         <h3>Achievements</h3>
         <div><div>
         <ul>
             <li>Certified in Machine Learning fundamentals.</li>
             <li>Successfully completed a project about finding a best cost efective vehicle, with a group of my friends.</li>
             <li></li>
-        </ul></div></div>
+        </ul></div></div>-->
     </div>
     </section>
 
@@ -328,7 +340,7 @@
     <section id="portfolio" class="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">My Portfolio</h2>
+                <h2 class="section-title">My PRojects</h2>
                 <p class="section-subtitle">
                     Here are some of the projects I've worked on that showcase my skills and creativity.
                 </p>
@@ -337,16 +349,19 @@
             <div class="portfolio-grid">
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop" alt="E-Commerce Platform">
+                        <img src="car.jpg" alt="Cost Efficient vehicle">
                     </div>
                     <div class="portfolio-content">
-                        <h3 class="portfolio-title">E-Commerce Platform</h3>
-                        <p class="portfolio-description">Full-stack e-commerce solution with payment integration</p>
+                        <h3 class="portfolio-title">Cost Effective Vehicle</h3>
+                        <p class="portfolio-description">A research project for to find the most cost-effective vehicle, one that delivers the best
+                             balance between initial purchase price, fuel efficiency, maintenance costs, and long-term reliability. </p>
                         <div class="portfolio-tags">
-                            <span class="portfolio-tag">React</span>
-                            <span class="portfolio-tag">Node.js</span>
-                            <span class="portfolio-tag">MongoDB</span>
-                            <span class="portfolio-tag">Stripe</span>
+                            <span class="portfolio-tag">Purchase price</span>
+                            <span class="portfolio-tag">Fuel cost</span>
+                            <span class="portfolio-tag">Insurance</span>
+                            <span class="portfolio-tag">Depreciation</span>
+                            <span class="portfolio-tag">Microsoft Excel</span>
+                            <span class="portfolio-tag">Repairs and maintenance</span>
                         </div>
                         <button class="portfolio-btn">
                             <i class="fas fa-external-link-alt"></i>
@@ -357,15 +372,16 @@
 
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop" alt="Task Management App">
+                        <img src="ui.png" alt="Student Project Showcase UI">
                     </div>
                     <div class="portfolio-content">
-                        <h3 class="portfolio-title">Task Management App</h3>
-                        <p class="portfolio-description">Collaborative task management with real-time updates</p>
+                        <h3 class="portfolio-title">Student Project Showcase UI</h3>
+                        <p class="portfolio-description">Designed a clean, user-friendly interface for a Student Project Showcase web application. 
+                            Focused on intuitive navigation, modern visuals, and responsive layouts for Android and iOS platforms.</p>
                         <div class="portfolio-tags">
-                            <span class="portfolio-tag">Vue.js</span>
-                            <span class="portfolio-tag">Express.js</span>
-                            <span class="portfolio-tag">Socket.io</span>
+                            <span class="portfolio-tag">Figma</span>
+                            <span class="portfolio-tag">Adobe Illustrator</span>
+                            <span class="portfolio-tag">Canva</span>
                         </div>
                         <button class="portfolio-btn">
                             <i class="fas fa-external-link-alt"></i>
@@ -376,15 +392,17 @@
 
                 <div class="portfolio-card">
                     <div class="portfolio-image">
-                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=250&fit=crop" alt="Weather Dashboard">
+                        <img src="game.png" alt="2D Game">
                     </div>
                     <div class="portfolio-content">
-                        <h3 class="portfolio-title">Weather Dashboard</h3>
-                        <p class="portfolio-description">Real-time weather application with location services</p>
+                        <h3 class="portfolio-title">2D Game</h3>
+                        <p class="portfolio-description">A 2D game that character suppose to run and jump through obsticles.
+                             It includes background music, sprite animations, and collision detection. Designed to run on desktop browsers.
+                        </p>
                         <div class="portfolio-tags">
-                            <span class="portfolio-tag">React</span>
-                            <span class="portfolio-tag">OpenWeather API</span>
-                            <span class="portfolio-tag">Chart.js</span>
+                            <span class="portfolio-tag">HTML</span>
+                            <span class="portfolio-tag">CSS </span>
+                            <span class="portfolio-tag">JavaScript</span>
                         </div>
                         <button class="portfolio-btn">
                             <i class="fas fa-external-link-alt"></i>
@@ -412,15 +430,12 @@
                     <p class="contact-card-subtitle">Feel free to reach out through any of these channels</p>
                     <div class="contact-items">
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>alex.johnson@example.com</span>
+                            <span>gaveshmithila4@gmail.com</span>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+94 77 123 4567</span>
+                            <span>+94 71 901 9018</span>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
                             <span>Colombo, Sri Lanka</span>
                         </div>
                     </div>
@@ -430,17 +445,17 @@
                     <h3 class="contact-card-title">Social Media</h3>
                     <p class="contact-card-subtitle">Connect with me on social platforms</p>
                     <div class="contact-items">
-                        <a href="#" class="contact-link">
+                        <a href="www.linkedin.com/in/gavesh-mithila-9697a6342" class="contact-link">
                             <i class="fab fa-linkedin"></i>
-                            <span>linkedin.com/in/alexjohnson</span>
+                            <span>linkedin.com/gaveshmithila</span>
                         </a>
-                        <a href="#" class="contact-link">
+                        <a href="https://github.com/Gavesh03" class="contact-link">
                             <i class="fab fa-github"></i>
-                            <span>github.com/alexjohnson</span>
+                            <span>github.com/gaveshmithila</span>
                         </a>
-                        <a href="#" class="contact-link">
-                            <i class="fab fa-twitter"></i>
-                            <span>twitter.com/alexjohnson</span>
+                        <a href="https://web.facebook.com/mithila.gavesh" class="contact-link">
+                            <i class="fab fa-facebook"></i>
+                            <span>facebook.com/gaveshmithila</span>
                         </a>
                     </div>
                 </div>
@@ -453,7 +468,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+                    <p>&copy; 2024 Gavesh Mithila. All rights reserved.</p>
                 </div>
                 <div class="footer-social">
                     <a href="#" class="footer-social-link"><i class="fab fa-linkedin"></i></a>
@@ -464,7 +479,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
