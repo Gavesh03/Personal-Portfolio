@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 0 1rem;
   
@@ -43,7 +43,7 @@ body {
 
 .logo img {
     border-radius: 50%;
-    border: 1px solid , purple;
+    border: 1px solid , rgb(117, 117, 117);
 }
 .logo img:hover{
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -78,6 +78,7 @@ body {
 .nav-mobile {
   display: none;
   flex-direction: column;
+  word-spacing: 3vw;
   gap: 0.5rem;
   padding: 1rem 0;
   border-top: 1px solid #e5e7eb;
@@ -155,11 +156,8 @@ body {
   color: #6b7280;
 }
 
-.contact-item i {
-  width: 18px;
-}
-
-.social-links {
+/**.social-links {
+  background-color: #10b981;
   display: flex;
   gap: 1rem;
   padding-top: 1rem;
@@ -177,7 +175,7 @@ body {
 
 .social-link:hover {
   color: #10b981;
-}
+}**/
 
 .hero-right {
   display: flex;
@@ -189,8 +187,8 @@ body {
 }
 
 .profile-image img {
-  width: 320px;
-  height: 320px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
   border: 8px solid #f3f4f6;
@@ -428,9 +426,8 @@ body {
 }
 
 .skill-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  display: block;
+  gap:0.5rem;
 }
 
 .skill-badge {
@@ -761,9 +758,13 @@ body {
   .mobile-menu-btn {
     display: block;
   }
+  .mobile-menu-btn img {
+    border-radius: 100%;
 
-  .nav-mobile.show {
-    display: flex;
+  }
+
+  .nav-mobile {
+    display: none;
   }
 
   .hero-content {

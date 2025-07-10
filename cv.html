@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gavesh Mithila - Portfolio</title>
     <link rel="stylesheet" href="cv.css">
+
+    <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileNav");
+      if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "block";
+      } else {
+        menu.style.display = "none";
+      }
+    }
+  </script>
     
 </head>
 <body>
@@ -28,19 +39,21 @@
                 </nav>
 
                 <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
+                <button onclick="toggleMenu()" class="mobile-menu-btn" id="mobileMenuBtn">
+                    <a href="#mobileNav"> <img src="menue.jpg" alt="menue" width="50px" height="50px"></a>
                 </button>
             </div>
 
             <!-- Mobile Navigation -->
             <nav class="nav-mobile" id="mobileNav">
+                <center>
                 <a href="#home" class="nav-link-mobile">Home</a>
                 <a href="#about" class="nav-link-mobile">About</a>
                 <a href="#skills" class="nav-link-mobile">Skills</a>
                 <a href="#experiences" class="nav-link-mobile">Experiences</a>
                 <a href="#portfolio" class="nav-link-mobile">Portfolio</a>
                 <a href="#contact" class="nav-link-mobile">Contact</a>
+                </center>
             </nav>
         </div>
     </header>
@@ -54,31 +67,31 @@
                     <div class="hello-badge">Hello I'm</div>
                     
                     <div class="hero-text">
-                        <h1 class="hero-name">Alex Johnson</h1>
+                        <h1 class="hero-name">Gavesh Mithila</h1>
                         <p class="hero-title">Computer Science Student</p>
                     </div>
 
                     <div class="contact-info">
                         <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>alex.johnson@example.com</span>
+                            
+                            <span>gaveshmithila4@gmail.com</span>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+94 77 123 4567</span>
+                            
+                            <span>+94 70 901 9018</span>
                         </div>
                         <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                            
                             <span>Colombo, Sri Lanka</span>
                         </div>
                     </div>
 
-                    <div class="social-links">
+                    <!--<div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    </div>
+                    </div>-->
                 </div>
 
                 <!-- Right Content - Profile Image -->
@@ -120,24 +133,27 @@
                 <div class="about-right">
                     <h2 class="section-title">About Me</h2>
                     <p class="about-text">
-                        Hello, I'm Alex Johnson, a passionate Computer Science student at the University of Sri Jayewardenepura.
-                        I have extensive experience in web development, software engineering, and modern technologies. I'm
-                        skilled in creating responsive web applications and solving complex programming challenges.
+                        Hello, I'm Gavesh Mithila, a passionate Computer Science student at the University of Sri Jayewardenepura.
+                        I have a good background in programming, problem-solving, and software development, and I am eager to use my skills
+                        and knowledge to address real-world issues while I continue to learn more. I enjoy web development, data 
+                        structures, and artificial intelligence. I am willing to take on any responsibilities that will help me gain 
+                        greater knowledge and skills and I look forward to obtaining more practical experience through internships or projects
+                        where I can apply my learning in a collaborative environment.
                     </p>
 
                     <div class="skills-section">
-                        <p class="skills-label">I'm proficient in:</p>
+                        <p class="skills-label">I'm Good in:</p>
                         <div class="skills-tags">
                             <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">Java</span>
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">HTML</span>
                             <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">MongoDB</span>
-                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">R</span>
                             <span class="skill-tag">Git</span>
-                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">PHP</span>
                         </div>
                     </div>
 
@@ -164,9 +180,9 @@
                 <div class="skill-card">
                     <h3 class="skill-card-title">Frontend Development</h3>
                     <div class="skill-card-tags">
-                        <span class="skill-badge">React</span>
-                        <span class="skill-badge">Vue.js</span>
-                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">React</span><br><br>
+                        <span class="skill-badge">Vue.js</span><br><br>
+                        <span class="skill-badge">HTML/CSS</span><br><br>
                         <span class="skill-badge">JavaScript</span>
                     </div>
                 </div>
