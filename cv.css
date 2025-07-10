@@ -424,11 +424,15 @@ body {
   margin-bottom: 1rem;
   color: #111827;
 }
+.align{
+  background-color: #ffffff;
+  text-align: right;
+}
 
-.skill-card-tags {
+/**.skill-card-tags {
   display: block;
   gap:0.5rem;
-}
+}**/
 
 .skill-badge {
   padding: 0.25rem 0.75rem;
@@ -516,12 +520,20 @@ body {
 
 .achievements-section {
   margin-top: 3rem;
+  
+}
+.ach{
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  background-color: #10b981;
+  width: 800px;
 }
 
 .achievements-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  width: 800px;
+  background-color: #059669;
+
 }
 
 .achievement-card {
@@ -529,7 +541,6 @@ body {
   padding: 1.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  text-align: center;
   transition: box-shadow 0.3s ease;
 }
 
