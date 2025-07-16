@@ -653,7 +653,7 @@ body {
   font-size: 0.75rem;
 }
 
-.portfolio-btn {
+/**.portfolio-btn {
   background: transparent;
   border: 1px solid #e5e7eb;
   color: #374151;
@@ -671,7 +671,7 @@ body {
 .portfolio-btn:hover {
   border-color: #10b981;
   color: #10b981;
-}
+}**/
 
 /* Contact Section */
 .contact {
@@ -756,11 +756,11 @@ body {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.footer-social {
+/**.footer-social {
   display: flex;
   gap: 1rem;
 }
@@ -773,7 +773,7 @@ body {
 
 .footer-social-link:hover {
   color: #10b981;
-}
+}**/
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -915,6 +915,7 @@ body {
   button,
   iframe,
   video,
+  .about-left,
   .portfolio-tags {
     display: none !important;
   }
@@ -957,7 +958,7 @@ body {
     display: none !important;
   }
 
-  /* Optional: Reduce font sizes slightly for fitting content */
+  /*Reduce font size to fit content */
   body {
     font-size: 14px;
   }
